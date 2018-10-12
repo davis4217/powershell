@@ -1,0 +1,5 @@
+Set-Location C:\
+$employees = Import-csv "employeelist.csv"
+for each ($member in $employees){
+	$member.Replace(' ','').ToLower()
+}
